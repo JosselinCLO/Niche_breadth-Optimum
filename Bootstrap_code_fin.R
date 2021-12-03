@@ -31,9 +31,11 @@ Breadth_PC2_tetra = c(NULL) # Vector of niche breadth for PC2 in tetraploids
 X_meaning=rep(1:100, times = 100)
 Y_meaning=c(NULL)
 
+good_values = 100:1
+
 for(i in 1:100){
   
-  temporary = rep(i, times = 100)
+  temporary = rep(good_values[i], times = 100)
   
   Y_meaning = c(Y_meaning, temporary)
 
